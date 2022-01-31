@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
   <header class="page-header">
@@ -16,7 +17,8 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
-        </li><li class="navigation-item">
+        </li>
+        <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
@@ -30,7 +32,9 @@
             <span class="visually-hidden">Избранное</span></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда!</a>
+          <a class="navigation-link" href="#">
+            <span class="want">Хочу сюда!</span>
+          </a>
         </li>
       </ul>
     </nav>
@@ -38,74 +42,76 @@
   <main class="main-page">
     <h1 class="visually-hidden">Городок Седона</h1>
     <section class="first-screen">
-      <img src="images/welcome.svg" width="1200" height="433,6" alt="Добро пожаловать">
+      <img class="main-page-image" src="images/welcome.svg" width="1200" height="433" alt="Добро пожаловать">
+    </section>
+    <div class="presentation-sedona">
       <h2 class="presentation">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="paragraph">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-    </section>
+    </div>
     <section class="advantages">
-      <div class="advantages-number">
-       <h2 class="advantages-number first">Настоящий городок</h2>
-       <p>-№1-</p>
-       <p class="paragraph">Седона — не аттракцион
+      <div class="bright-color">
+       <h2 class="advantages-number">Настоящий городок</h2>
+       <p class="advantages-paragraph">-№1-</p>
+       <p class="advantages-paragraph">Седона — не аттракцион
           для туристов, там течёт своя жизнь</p>
           <img class="foto" src="images/gallery/photo-1.jpg" width="800" height="384" alt="Фото улицы Седоны">
       </div>
-      <div class="advantages-item">
+      <div class="advantages-item blue">
         <img class="logo" src="images/logo/logo-house.svg" width="75" height="72" alt="Логотип дома"> 
         <h3 class="advantages-title">Жильё</h3>
-        <p>Рекомендуем пожить в настоящем мотеле
+        <p class="pros">Рекомендуем пожить в настоящем мотеле
               всё как в кино!</p>
       </div>
-      <div class="advantages-item">
-        <img class="logo" src="images/logo/logo-burger.svg" width="73,81" height="70" alt="Логотип бургера"> 
+      <div class="advantages-item white">
+        <img class="logo" src="images/logo/logo-burger.svg" width="73" height="70" alt="Логотип бургера"> 
         <h3 class="advantages-title">Еда</h3>
-        <p>Всегда заказывайте топовый фирменный бургер,
+        <p class="pros">Всегда заказывайте топовый фирменный бургер,
              вы не разочаруетесь!</p>
       </div>
-      <div class="advantages-item">
+      <div class="advantages-item blue">
         <img class="logo" src="images/logo/logo-present.svg" width="64" height="76" alt="Логотип подарка"> 
         <h3 class="advantages-title">Сувениры</h3>
-        <p>Не только китайского,но и настоящего местного
+        <p class="pros">Не только китайского,но и настоящего местного
              производства!</p>
       </div>       
-      <div class="advantages-number">
+      <div class="bright-color">
         <img class="foto" src="images/gallery/photo-2.jpg" width="800" height="384" alt="Фото каньона">
-        <h2 class="advantages-number second">Там есть мост дьявола</h2>
-        <p>-№2-</p>
-        <p class="paragraph">Да, по нему можно пройти!
+        <h2 class="advantages-number">Там есть мост дьявола</h2>
+        <p class="advantages-paragraph">-№2-</p>
+        <p class="advantages-paragraph">Да, по нему можно пройти!
          Если вы осмелитесь, разумеется</p>
       </div>
-      <div class="advantages-number">
-        <h2 class="advantages-number third">Небольшая площадь</h2>
-        <p>-№3-</p>
-        <p class="paragraph">Все достопримечательности
+      <div class="middle-color">
+        <h2 class="advantages-number">Небольшая площадь</h2>
+        <p class="advantages-paragraph">-№3-</p>
+        <p class="advantages-paragraph">Все достопримечательности
          находятся очень близко</p>
       </div>
-      <div class="advantages-number">
-        <h2 class="advantages-number fourth">Красивая дорога</h2>
-        <p>-№4-</p>
-        <p class="paragraph">Ехать в Седону из Лас-Вегаса
+      <div class="dim-color">
+        <h2 class="advantages-number">Красивая дорога</h2>
+        <p class="advantages-paragraph">-№4-</p>
+        <p class="advantages-paragraph">Ехать в Седону из Лас-Вегаса
          совсем не скучно!</p>
       </div>
-      <div class="advantages-number">
-        <h2 class="advantages-number fifth">Мало туристов</h2>
-        <p>-№5-</p>
-        <p class="paragraph">Большинство едет в Гранд
+      <div class="middle-color">
+        <h2 class="advantages-number">Мало туристов</h2>
+        <p class="advantages-paragraph">-№5-</p>
+        <p class="advantages-paragraph">Большинство едет в Гранд
          и толпится там</p>
       </div>
     </section>
     <section class="hotel-search">
       <h2 class="hotel-search-interest">Заинтересовались?</h2>
-      <p class="paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="paragraph-data">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a class="hotel-search-link" href="#">Поиск гостиницы в Седоне</a>
     </section>
     <section class="distribution">
       <h2 class="distribution-subscription">Подпишитесь на рассылку</h2>
-      <p class="paragraph">Только полезная информация и никакого спама,
+      <p class="paragraph-info">Только полезная информация и никакого спама,
          честное бойскаутское!</p>
       <form name="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input name="appointment-email" type="email" placeholder="Ваш e-mail">
-        <button type="submit">Подписаться</button>
+        <input class="e-mail" name="appointment-email" type="email" placeholder="Ваш e-mail">
+        <button class="button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
