@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/1973093-sedona-33/2/">
 </head>
   <body>
@@ -31,13 +32,16 @@
             <span class="visually-hidden">Избранное</span></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
+          <a class="navigation-link" href="#">
+            <span class="want">Хочу сюда!</span>
+          </a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main-catalog">
-    <header class="catalog-header">
+    <div class="catalog-service">
+      <header class="catalog-header">
         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -48,58 +52,59 @@
                 <a class="breadcrumbs-link" href="index.html">Гостиницы</a>
             </li>
         </ul>
-    </header>
-    <section class="services">
+      </header>
+      <section class="services">
         <h2 class="visually-hidden">Список услуг с фильтрами</h2>
         <form action="https://echo.htmlacademy.ru/" metod="get">
-            <fieldset>
-                <legend>Инфраструктура:</legend>
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="infrasructure">
+                       <input class="infrasructure-input" type="checkbox" name="pool" checked>Бассейн
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="infrasructure">
+                        <input class="infrasructure-input" type="checkbox" name="parking" checked>Парковка
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="infrasructure">
+                        <input class="infrasructure-input" type="checkbox" name="wi-fi">Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                     <li class="filter-item">
-                        <label class="infrasructure">
-                            <input class="infrasructure-input" type="checkbox" name="pool" checked>Бассейн
+                        <label class="type-of-housing">
+                            <input class="infrasructure-input" type="radio" name="type-of-housing" value="hotel" checked>Гостиница
                         </label>
                     </li>
                     <li class="filter-item">
-                        <label class="infrasructure">
-                            <input class="infrasructure-input" type="checkbox" name="parking" checked>Парковка
+                        <label class="type-of-housing">
+                            <input class="infrasructure-input" type="radio" name="type-of-housing" value="motel">Мотель
                         </label>
                     </li>
                     <li class="filter-item">
-                        <label class="infrasructure">
-                            <input class="infrasructure-input" type="checkbox" name="wi-fi">Wi-Fi
+                        <label class="type-of-housing">
+                            <input class="infrasructure-input" type="radio" name="type-of-housing" value="apartment">Аппартаменты
                         </label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
-                <legend>Тип жилья:</legend>
-                <ul class="filter-list">
-                    <li class="filter-item">
-                        <label class="type-of-housing">
-                            <input class="type-of-housing-input" type="radio" name="type-of-housing" value="hotel" checked>Гостиница
-                        </label>
-                    </li>
-                    <li class="filter-item">
-                        <label class="type-of-housing">
-                            <input class="type-of-housing-input" type="radio" name="type-of-housing" value="motel">Мотель
-                        </label>
-                    </li>
-                    <li class="filter-item">
-                        <label class="type-of-housing">
-                            <input class="type-of-housing-input" type="radio" name="type-of-housing" value="apartment">Аппартаменты
-                        </label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Стоимость, ₽:</legend>
+            <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 0<input type="range" min="0" max="9000">9000
             </fieldset>
             <button class="button" type="submit">Применить</button>
             <button class="button-reset" type="reset">Сбросить</button>
         </form>
-    </section>
+      </section>
+    </div>
     <section class="sorting">
       <p>Найдено гостиниц: 38</p>
       <select class="select-control" aria-label="Сортировка">
@@ -107,13 +112,13 @@
         <option value="rich">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
       </select>
-      <a class="button" href="#">
+      <a class="show" href="#">
         <span class="visually-hidden">Показать карточки</span>
       </a>
-      <a class="button" href="#">
+      <a class="show" href="#">
         <span class="visually-hidden">Показать слайды</span>
       </a>
-      <a class="button" href="#">
+      <a class="show" href="#">
         <span class="visually-hidden">Показать список</span>
       </a>
     </section>
@@ -171,7 +176,7 @@
       <button class="load-more" type="submit">Загрузить еще</button>
       <ul class="page-number-list">
         <li class="page-number-item">
-          <a class="page-number-link" href="#">1</a>
+          <a class="page-number-link page-number-current" href="#">1</a>
         </li>
         <li class="page-number-item">
           <a class="page-number-link" href="#">2</a>
@@ -199,11 +204,11 @@
     </section>
     <section class="distribution">
       <h2 class="distribution-subscription">Подпишитесь на рассылку</h2>
-      <p class="paragraph">Только полезная информация и никакого спама,
+      <p class="paragraph-info">Только полезная информация и никакого спама,
          честное бойскаутское!</p>
       <form name="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input name="appointment-email" type="email" placeholder="Ваш e-mail">
-        <button type="submit">Подписаться</button>
+        <input class="e-mail" name="appointment-email" type="email" placeholder="Ваш e-mail">
+        <button class="button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
