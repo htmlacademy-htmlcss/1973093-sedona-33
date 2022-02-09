@@ -7,6 +7,7 @@
     <base href="https://htmlacademy-htmlcss.github.io/1973093-sedona-33/3/">
 </head>
   <body>
+    <div class="wrapper">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -45,7 +46,7 @@
           <h1 class="catalog-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">
+                  <a class="breadcrumbs-link" href="index.html">Главная
                   </a>
               </li>
               <li class="breadcrumbs-item">
@@ -56,6 +57,8 @@
         <section class="services">
           <h2 class="visually-hidden" hidden>Список услуг с фильтрами</h2>
           <form action="https://echo.htmlacademy.ru/" metod="get">
+            <div class="filter-group">
+              <div class="filter-group-infrasructure">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
@@ -76,6 +79,8 @@
                   </li>
                   </ul>
               </fieldset>
+              </div>
+              <div class="catalog-filter-type">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
@@ -96,17 +101,23 @@
                     </li>
                 </ul>
               </fieldset>
+              </div>
+              <div class="catalog-filter-price">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   0<input type="range" min="0" max="9000">9000
               </fieldset>
+              </div>
+              <div class="catalog-filter-button">
                 <button class="button" type="submit">Применить</button>
                 <button class="button-reset" type="reset">Сбросить</button>
+              </div>
+            </div>   
           </form>
         </section>
       </div>
       <section class="sorting">
-        <p>Найдено гостиниц: 38</p>
+        <p class="find-page">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="rich">Сначала дорогие</option>
@@ -157,7 +168,7 @@
             <span class="options-item-price">От 2000 ₽</span>
             <a class="options-item-button link" href="#">Подробнее</a>
             <button class="options-item-button button" type="button">В избранном</button>
-            <img class="stars-image" src="images/stars/stars-3,4.svg" width="43" height="17" alt="2 звезды">
+            <img class="stars-image" src="images/stars/stars-3-4.svg" width="43" height="17" alt="2 звезды">
             <span class="rating">Рейтинг: 9,2</span>
           </li>
           <li class="options-item">
@@ -174,6 +185,8 @@
           </li>
         </ul>
         <button class="load-more" type="submit">Загрузить еще</button>
+      </section>
+      <div class="pagination">
         <ul class="page-number-list">
           <li class="page-number-item">
             <a class="page-number-link page-number-current" href="#">1</a>
@@ -194,18 +207,20 @@
             <a class="page-number-link" href="#">10</a>
           </li>
         </ul>
-        <p class="number-of-hotels">Гостиниц на странице:</p>
-        <select class="options-select-control" aria-label="Сортировка">
-          <option value="four">4</option>
-          <option value="one">1</option>
-          <option value="two">2</option>
-          <option value="three">3</option>
-        </select>
-      </section>
+        <div class="quantity">
+          <p class="number-of-hotels">Гостиниц на странице:</p>
+          <select class="options-select-control" aria-label="Сортировка">
+            <option value="four">4</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+          </select>
+        </div>
+      </div>
       <section class="distribution-catalog">
         <h2 class="distribution-subscription-catalog">Подпишитесь на рассылку</h2>
-        <p class="paragraph-info-catalog">Только полезная информация и никакого спама,
-           честное бойскаутское!</p>
+        <p class="paragraph-info-catalog">Только полезная информация и никакого спама,<br>
+          честное бойскаутское!</p>
         <form name="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="e-mail" name="appointment-email" type="email" placeholder="Ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
@@ -242,7 +257,8 @@
           </a>
         </section>
       </div>
-    </footer> 
+    </footer>
+    </div> 
   </body>
 </html>
   
