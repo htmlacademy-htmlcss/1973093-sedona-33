@@ -79,17 +79,28 @@
                     <ul class="filter-list">
                       <li class="filter-item">
                         <label class="infrasructure">
-                          <input class="infrasructure-input square" type="checkbox" name="pool" checked>Бассейн
+                          <input class="visually-hidden infrasructure-input" type="checkbox" name="pool" checked>
+                          <span class="infrasructure-mark">
+                            <!-- <img class="stars-image" src="images/stars/stars-1.svg" width="91" height="17" alt="4 звезды"> -->
+                            <!-- <svg aria-hidden="true" focusable="false" width="13" height="10" viewBox="0 0 13 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path class="infrasructure-tick" d="M11 0 4.5 7.4 1.1 3.5 0 4.7l4.5 5.2 7.7-8.6L11 0Z"/>
+                            </svg> -->
+                          </span>
+                          <span class="infrasructure-label">Бассейн</span>
                         </label>
                       </li>
                       <li class="filter-item">
                         <label class="infrasructure">
-                          <input class="infrasructure-input square" type="checkbox" name="parking" checked>Парковка
+                          <input class="visually-hidden infrasructure-input" type="checkbox" name="parking" checked>
+                          <span class="infrasructure-mark"></span>
+                          <span class="infrasructure-label">Парковка</span>
                         </label>
                       </li>
                       <li class="filter-item">
                         <label class="infrasructure">
-                          <input class="infrasructure-input square" type="checkbox" name="wi-fi">Wi-Fi
+                          <input class="visually-hidden infrasructure-input" type="checkbox" name="wi-fi">
+                          <span class="infrasructure-mark"></span>
+                          <span class="infrasructure-label">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
@@ -101,17 +112,23 @@
                     <ul class="filter-list">
                         <li class="filter-item">
                             <label class="type-of-housing">
-                                <input class="infrasructure-input circle" type="radio" name="type-of-housing" value="hotel" checked>Гостиница
+                                <input class="visually-hidden infrasructure-input" type="radio" name="type-of-housing" value="hotel" checked>
+                                <span class="type-of-housing-mark"></span>
+                                <span class="type-of-housing-label">Гостиница</span>
                             </label>
                         </li>
                         <li class="filter-item">
                             <label class="type-of-housing">
-                                <input class="infrasructure-input circle" type="radio" name="type-of-housing" value="motel">Мотель
+                                <input class="visually-hidden infrasructure-input" type="radio" name="type-of-housing" value="motel">
+                                <span class="type-of-housing-mark"></span>
+                                <span class="type-of-housing-label">Мотель</span>
                             </label>
                         </li>
                         <li class="filter-item">
                             <label class="type-of-housing">
-                                <input class="infrasructure-input circle" type="radio" name="type-of-housing" value="apartment">Аппартаменты
+                                <input class="visually-hidden infrasructure-input" type="radio" name="type-of-housing" value="apartment">
+                                <span class="type-of-housing-mark"></span>
+                                <span class="type-of-housing-label">Аппартаменты</span>
                             </label>
                         </li>
                     </ul>
@@ -120,7 +137,28 @@
                 <div class="catalog-filter-price">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    0<input type="range" min="0" max="9000">9000
+                  <div class="difference">
+                    <label class="catalog-filter-label one">
+                      <input class="range-input" type="number" value="0" name="min-price">
+                      <span class="price-range">от</span>
+                    </label>
+                    <label class="catalog-filter-label">
+                      <input class="range-input" type="number" value="9000" name="min-price">
+                      <span class="price-range">до</span>
+                    </label>
+                  </div>
+                  <div class="range">
+                    <div class="range-stripe">
+                      <div class="range-stripe-choose"style="left: 0; width: 227px">
+                        <button class="range-square square-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-square square-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 </div>
                 <div class="catalog-filter-button">
