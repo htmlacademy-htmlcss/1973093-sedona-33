@@ -753,7 +753,7 @@ body {
 .type-of-housing {
     position: relative;
     display: block;
-    font-family: PT Sans;
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -831,7 +831,7 @@ body {
 .catalog-filter-type {
     min-width: 145px;
     margin: 0;
-    margin-right: 167px;
+    margin-right: 168px;
     padding: 0;
     border: none;
 }
@@ -863,11 +863,9 @@ body {
 
 .difference {
     display: flex;
-    width: 283px;
-    height: 44px;
+    width: 286px;
+    height: 48px;
     margin-top: 7px;
-    /* border: 2px solid #FFFFFF;
-    border-radius: 4px; */
 }
 
 .catalog-filter-label {
@@ -884,7 +882,6 @@ body {
 
 .label-left:hover {
     border: 2px solid rgba(255, 255, 255, 0.6);
-    z-index: 1;
 }
 
 .label-left:focus-within {
@@ -905,7 +902,6 @@ body {
 
 .label-right:hover {
     border: 2px solid rgba(255, 255, 255, 0.6);
-    z-index: 1;
 }
 
 .label-right:focus-within {
@@ -924,11 +920,11 @@ body {
 
 .range-input {
     width: 75px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    margin-left: 15px;
+    margin-left: 14px;
     padding-top: 3px;
     padding-left: 2px;
     color: #FFFFFF;
@@ -945,11 +941,11 @@ body {
 
 .input-max {
     margin-top: 2px;
-    margin-left: 14px;
+    margin-left: 13px;
 }
 
 .price-range {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -1041,7 +1037,7 @@ body {
 
 .button-reset {
     box-sizing: content-box;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -1402,7 +1398,7 @@ body {
     margin-top: 61px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     width: 620px;
     height: 60px;
     padding: 17px 0;
@@ -1582,7 +1578,7 @@ body {
   }
 
   .modal-title {
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
@@ -1643,7 +1639,7 @@ body {
 
 .modal-text {
     display: flex;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
@@ -1657,7 +1653,7 @@ body {
     display: flex;
     width: 420px;
     height: 50px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
@@ -1719,7 +1715,7 @@ body {
 }
 
 .text-range {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
@@ -1801,7 +1797,7 @@ body {
   }
 
 .modal-input-quantity {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #000000;
