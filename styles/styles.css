@@ -781,7 +781,7 @@ body {
 .infrasructure-input:checked + .infrasructure-mark {
     width: 20px;
     height: 20px;
-    background-image: url("../images/vector.svg");
+    background-image: url("../images/tick.svg");
     background-repeat: no-repeat;
     background-position: center center;
     content: "";
@@ -1931,7 +1931,7 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.modal-container-close {
+/* .modal-container-close {
     display: none;
-}
+} */
 

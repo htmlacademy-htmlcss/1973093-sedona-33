@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="/images/logo/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo/favicon.png" type="image/x-icon">
   </head>
   <body>
     <div class="wrapper">
@@ -207,25 +207,25 @@
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="modal-line">
                 <label class="modal-text" for="data-entry">Дата заезда:</label>
-                <input class="modal-input input-disabled" type="text" value="27 апреля 2020" id="data-entry" required>
+                <input class="modal-input input-disabled" type="text" name="enter" value="27 апреля 2020" id="data-entry" required>
                 <span class="entry">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="modal-line">
                 <label class="modal-text" for="data-departure">Дата выезда:</label>
-                <input class="modal-input input-disabled" type="text" value="1 сентября 2021" id="data-departure" required>
+                <input class="modal-input input-disabled" type="text" value="1 сентября 2021" name="exit" id="data-departure" required>
                 <span class="departure">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="quantity-people">
-                <label class="modal-text">Взрослые:</label>
+                <label class="modal-text" for="grown-up">Взрослые:</label>
                 <div class="container-minus-plus">
-                  <input class="modal-input-quantity" type="text" value="2">
+                  <input class="modal-input-quantity" type="text" value="2" name="quantity-people" id="grown-up">
                   <button class="quantity-people-button people-plus" type="button"></button>
                   <button class="quantity-people-button people-minus" type="button"></button>
                 </div>
               </div>
               <div class="quantity-child">
                 <span class="text-range">
-                  <label class="text-range">Дети:</label>
+                  <label class="text-range" for="children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                       <svg  class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -246,7 +246,7 @@
                   </span>
                 </span>
                 <div class="container-minus-plus">
-                  <input class="modal-input-quantity modal-quantity-child" type="text" value="1">
+                  <input class="modal-input-quantity modal-quantity-child" type="text" value="1" name="quantity-child" id="children">
                   <button class="quantity-child-button child-plus" type="button"></button>
                   <button class="quantity-child-button child-minus" type="button"></button>
                 </div>
